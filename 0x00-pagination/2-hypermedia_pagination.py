@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """Hypermedia pagination"""
-from .0_simple_helper_function import index_range
 import csv
 import math
 from typing import Dict, List
+index_range = __import__('0-simple_helper_function').index_range
 
 
 class Server:
