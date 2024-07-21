@@ -2,10 +2,9 @@
 """
 Deletion-resilient hypermedia pagination
 """
-
 import csv
-from typing import List, Dict
-from .0_simple_helper_function import index_range
+from typing import Dict, List
+index_range = __import__('0-simple_helper_function').index_range
 
 
 class Server:
