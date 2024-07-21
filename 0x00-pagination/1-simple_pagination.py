@@ -4,7 +4,7 @@
 
 import csv
 import math
-from typing import List, Tuple
+from typing import List
 from .0_simple_helper_function import index_range
 
 
