@@ -2,7 +2,7 @@
 <center>
   <article>
 <h2>Boosting Performance and Efficiency</h2>
-    <img src="/image.png" />
+    <img src="./image.png" />
     <p>
       In today's fast-paced digital world, caching has become an indispensable tool for optimizing performance and improving efficiency. By storing frequently accessed data in a cache, we can significantly reduce the time and resources required to retrieve information, leading to faster response times and improved user experiences. Caching helps alleviate the strain on servers by reducing the number of requests, ultimately resulting in cost savings and increased scalability. Whether it's web applications, databases, or content delivery networks, implementing caching strategies is a game-changer for organizations looking to deliver faster, more efficient services. Harnessing the power of caching unlocks a world of opportunities for businesses, allowing them to stay ahead in a highly competitive landscape.
     </p>
