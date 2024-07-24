@@ -8,7 +8,7 @@ BaseCaching = __import__('base_caching').BaseCaching
 
 class LRUCache(BaseCaching):
     """
-    Class that inherits from BaseCaching 
+    Class that inherits from BaseCaching
     and is a caching system
     """
     def __init__(self):
