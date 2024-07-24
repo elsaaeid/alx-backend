@@ -29,7 +29,7 @@
 <li> <a href="https://github.com/elsaaeid/alx-backend/blob/master/0x01-caching/2-lifo_cache.py"> 2. LIFO Caching</a></li>
 <li> <a href="https://github.com/elsaaeid/alx-backend/blob/master/0x01-caching/3-lru_cache.py"> 3. LRU Caching</a></li>
   <li> <a href="https://github.com/elsaaeid/alx-backend/blob/master/0x01-caching/4-mru_cache.py">4. MRU Caching</a></li>
-  <li> <a href="[ggh](https://github.com/elsaaeid/alx-backend/blob/master/0x01-caching/100-lfu_cache.py">5. LFU Caching</a></li>
+  <li> <a href="https://github.com/elsaaeid/alx-backend/blob/master/0x01-caching/100-lfu_cache.py">5. LFU Caching</a></li>
   </ul>
 </article>
 
