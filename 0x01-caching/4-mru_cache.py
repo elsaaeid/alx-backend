@@ -16,22 +16,22 @@ class MRUCache(BaseCaching):
         Initialize
         """
         super().__init__()
-        self.access_tracker = []
+        self.keys = []
 
     def put(self, key, item):
         """
         Add an item to the cache
         """
-        if key is None or item is None:
-            return
-
-        if len(self.cache_data) >= BaseCaching.MAX_ITEMS:
-            discarded_key = self.access_tracker.pop()
-            del self.cache_data[discarded_key]
-            print(f"DISCARD: {discarded_key}")
-
-        self.cache_data[key] = item
-        self.access_tracker.insert(0, key)
+        if key is not None and item is not None:
+            self.cache_data[key] = item
+            if key not in self.keys:
+                self.keys.append(key)
+            else:
+                self.keys.append(self.keys.pop(self.keys.index(key)))
+            if len(self.keys) > BaseCaching.MAX_ITEMS:
+                discard = self.keys.pop(-2)
+                del self.cache_data[discard]
+                print('DISCARD: {:s}'.format(discard))
 
     def get(self, key):
         """
@@ -40,6 +40,6 @@ class MRUCache(BaseCaching):
         if key is None or key not in self.cache_data:
             return None
 
-        self.access_tracker.remove(key)
-        self.access_tracker.insert(0, key)
+        self.keys.remove(key)
+        self.keys.insert(0, key)
         return self.cache_data[key]
