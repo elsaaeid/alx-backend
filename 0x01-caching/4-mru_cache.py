@@ -37,9 +37,7 @@ class MRUCache(BaseCaching):
         """
         Get an item from the cache
         """
-        if key is None or key not in self.cache_data:
-            return None
-
-        self.keys.remove(key)
-        self.keys.insert(0, key)
-        return self.cache_data[key]
+        if key is not None and key in self.cache_data:
+            self.keys.append(self.keys.pop(self.keys.index(key)))
+            return self.cache_data[key]
+        return None
