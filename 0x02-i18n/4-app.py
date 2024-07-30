@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Flask app
+Flask app module
 """
 from flask import (
     Flask,
@@ -30,9 +30,9 @@ def get_locale():
     Function that determines best language
     match based on supported languages
     """
-    loc = request.args.get('locale')
-    if loc in app.config['LANGUAGES']:
-        return loc
+    locale = request.args.get('locale')
+    if locale in app.config['LANGUAGES']:
+        return locale
     return request.accept_languages.best_match(app.config['LANGUAGES'])
 
 
