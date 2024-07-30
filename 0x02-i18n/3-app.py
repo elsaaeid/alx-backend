@@ -12,7 +12,7 @@ from flask_babel import Babel
 
 class Config(object):
     """
-    Configuration for Babel
+    Function that configures attributes
     """
     LANGUAGES = ["en", "fr"]
     BABEL_DEFAULT_LOCALE = "en"
