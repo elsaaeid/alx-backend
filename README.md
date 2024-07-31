@@ -1,5 +1,6 @@
 # Backend - ALX & Holberton School
 
+<img src="image.png" />
 # Description
 
 <p>This repository contains programs written for the specialization section.</p>
