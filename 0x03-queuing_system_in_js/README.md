@@ -50,6 +50,6 @@ npm install redis
     <a href="https://github.com/redis/node-redis">Redis client for Node JS</a>
   </li>
   <li>
-    <a href="https://github.com/Automattic/kue">Kue deprecated but still use in the industry</a>
+    <a href="https://github.com/Automattic/kue">Kue</a>deprecated but still use in the industry
   </li>
 </ul>
