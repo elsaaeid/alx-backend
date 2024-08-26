@@ -8,6 +8,8 @@ A **queuing system** is a data structure that manages tasks in a specific order,
 
 **Redis** is an in-memory data structure store that functions as a database, cache, and message broker. It supports various data types, with lists being particularly useful for implementing queues. 
 
+<img src="./image.png" />
+
 ### Key Redis Commands for Queues:
 - **Add to Queue**: `RPUSH queue_name item`
 - **Remove from Queue**: `LPOP queue_name`
@@ -34,8 +36,6 @@ To install the node-redis client, run:
 ```bash
 npm install redis
 ```
-
-<img src="./image.png" />
 
 ### Resources:
 
